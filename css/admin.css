@@ -1,0 +1,92 @@
+/*
+ * Post subtitle.
+ */
+#subtitle-div {
+	margin-top: 6px;
+	position: relative;
+}
+
+#subtitle-wrap {
+	border: 0;
+	padding: 0;
+}
+
+#subtitle-input {
+	padding: 3px 8px;
+	font-size: 1.7em;
+	line-height: 100%;
+	height: 1.7em;
+	width: 100%;
+	outline: none;
+	margin: 0 0 3px;
+	background-color: #fff;
+}
+
+#subtitle-input-prompt-text {
+	color: #777;
+	position: absolute;
+	font-size: 1.7em;
+	padding: 11px 10px;
+}
+
+/*
+ * Post first name.
+ */
+#first-name-div {
+	margin-top: 6px;
+	position: relative;
+}
+
+#first-name-wrap {
+	border: 0;
+	padding: 0;
+}
+
+#first-name-input {
+	padding: 3px 8px;
+	font-size: 1.7em;
+	line-height: 100%;
+	height: 1.7em;
+	width: 100%;
+	outline: none;
+	margin: 0 0 3px;
+	background-color: #fff;
+}
+
+#first-name-input-prompt-text {
+	color: #777;
+	position: absolute;
+	font-size: 1.7em;
+	padding: 11px 10px;
+}
+
+/*
+ * Post last name.
+ */
+#last-name-div {
+	margin-top: 6px;
+	position: relative;
+}
+
+#last-name-wrap {
+	border: 0;
+	padding: 0;
+}
+
+#last-name-input {
+	padding: 3px 8px;
+	font-size: 1.7em;
+	line-height: 100%;
+	height: 1.7em;
+	width: 100%;
+	outline: none;
+	margin: 0 0 3px;
+	background-color: #fff;
+}
+
+#last-name-input-prompt-text {
+	color: #777;
+	position: absolute;
+	font-size: 1.7em;
+	padding: 11px 10px;
+}
