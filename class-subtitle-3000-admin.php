@@ -114,7 +114,7 @@ class Subtitle_3000_Admin {
 		printf(
 			'<div id="subtitle-div"><div id="subtitle-wrap"><label id="subtitle-input-prompt-text" for="subtitle" %s>%s</label><input type="text" name="subtitle" value="%s" id="subtitle-input" size="30" spellcheck="true" autocomplete="off" />%s</div></div>',
 			empty( $post->subtitle ) ? '' : 'class="screen-reader-text"',
-			esc_html( apply_filters( 'subtitle_label', __( 'Enter subtitle here', 'subtitle-3000' ) ) ),
+			esc_html( apply_filters( 'subtitle_3000_label', __( 'Enter subtitle here', 'subtitle-3000' ) ) ),
 			esc_attr( $post->subtitle ),
 			wp_kses(
 				wp_nonce_field( 'save-subtitle', 'subtitle-nonce', false ),

@@ -1,3 +1,14 @@
+/**
+ * Make the subtitle input behave
+ *
+ * @package    WordPress
+ * @subpackage Subtitle_3000
+ * @author     Barry Ceelen
+ * @license    GPL-3.0+
+ * @link       https://github.com/barryceelen/wp-subtitle-3000
+ * @copyright  Barry Ceelen
+ */
+
 /* global tinymce, wptitlehint */
 (function ($) {
 	'use strict';
