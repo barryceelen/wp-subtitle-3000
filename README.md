@@ -20,3 +20,29 @@ function prefix_add_subtitle_support() {
 	}
 }
 ```
+
+## Use
+
+The subtitle is saved to a custom field called `subtitle`.   
+The plugin does not add any template tags to retrieve it, use at your own convenience.
+
+```
+// When in the loop something along these lines might work:
+
+if ( ! empty( $post->subtitle ) ) {
+	echo esc_html( $post->subtitle );
+}
+
+// Or:
+
+$subtitle = get_post_meta( $post->ID, 'subtitle', true );
+
+if ( ! empty( $post->subtitle ) ) {
+
+	printf(
+		'<p class="entry-subtitle">%s</p>',
+		esc_html( $post->subtitle )
+	); 
+}
+
+```
