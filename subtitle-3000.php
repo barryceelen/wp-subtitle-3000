@@ -12,7 +12,7 @@
  * Plugin Name:       Subtitle 3000
  * Plugin URI:        https://github.com/barryceelen/wp-subtitle-3000
  * Description:       Add a subtitle input field to the post edit screen.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Barry Ceelen
  * Author URI:        https://github.com/barryceelen
  * Text Domain:       subtitle-3000
