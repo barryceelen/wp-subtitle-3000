@@ -1,43 +1,16 @@
-/* global tinymce */
+/* global tinymce, wptitlehint */
 (function ($) {
 	'use strict';
 	$(function () {
 
-		// Clone of wptitlehint() function in post.js.
-		var wptitlehint = function( id ) {
-
-			id = id || 'subtitle-input';
-
-			var title = $( '#' + id ), titleprompt = $( '#' + id + '-prompt-text' );
-
-			if ( '' === title.val() ) {
-				titleprompt.removeClass( 'screen-reader-text' );
-			}
-
-			titleprompt.click( function(){
-				$( this ).addClass( 'screen-reader-text' );
-				title.focus();
-			});
-
-			title.blur( function() {
-				if ( '' === this.value ) {
-					titleprompt.removeClass( 'screen-reader-text' );
-				}
-			}).focus( function() {
-				titleprompt.addClass( 'screen-reader-text' );
-			}).keydown( function( e ){
-				titleprompt.addClass( 'screen-reader-text' );
-				$( this ).unbind( e );
-			});
-		};
-
-		wptitlehint();
+		if ( $.isFunction( wptitlehint ) ) {
+			wptitlehint( 'subtitle-input' );
+		}
 
 		// Tab from the title to the subtitle, rather than the post content.
 		$( '#title' ).on( 'keydown.editor-focus', function( event ) {
 			if ( 9 === event.keyCode && ! event.ctrlKey && ! event.altKey && ! event.shiftKey ) {
 				$( '#subtitle-input' ).focus();
-
 				event.preventDefault();
 			}
 		});
